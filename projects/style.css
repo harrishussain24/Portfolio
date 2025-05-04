@@ -294,7 +294,7 @@ header .navbar ul li a:hover{
     margin: 0rem;
   }
   .work .box-container .grid-item .box{
-    width: 95% !important;
+    width: 95% !important; 
   }
 }
 
