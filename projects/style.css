@@ -67,7 +67,7 @@ header{
 }
 section{
   min-height: 100vh;
-  padding: 2rem 9%;
+  padding: 2rem 0;
 }
 .heading{
   font-size: 3.5rem;
@@ -171,8 +171,9 @@ header .navbar ul li a:hover{
 /* work section starts */
 .work{
   /* background: #010124; */
-  background: linear-gradient(to bottom, #010136, #00003a);
+  background: linear-gradient(to bottom, #000031, #00002c);
   margin-top: 5rem;
+  padding-bottom: 3rem;
 }
 .work h2{
   color: #fff;
@@ -189,15 +190,15 @@ header .navbar ul li a:hover{
   flex-wrap: wrap;
   gap: 1rem;
   margin: 2rem auto;
-  width: 80%;
-  max-width: 800px;
+  width: 60%;
+  max-width: 600px;
   justify-content: center;
   align-items: center;
   padding: 0 1.5rem;
 }
 .work .button-group .btn{
   outline: none;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.5rem;
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
@@ -205,6 +206,7 @@ header .navbar ul li a:hover{
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
+  font-size: 1.4rem;
 }
 .work .button-group .btn:hover{
   background-color: #fff;
@@ -215,26 +217,29 @@ header .navbar ul li a:hover{
   color: #000;
 }
 .work .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem auto;
-  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  width: 90%;
   max-width: 1200px;
+  justify-content: center;
+}
+.work .box-container .grid-item {
+  width: 30%;
+  min-width: 300px;
+  margin: 0 0 2rem 0;
 }
 .work .box-container .box{
-  border-radius: 0.8rem;
-  box-shadow: 0 0.7rem 1rem rgba(0,0,0,0.3);
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   height: 30rem;
-  background: #fff;
-  border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .work .box-container .box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 .work .box-container .box img{
   height: 100%;
@@ -245,12 +250,12 @@ header .navbar ul li a:hover{
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 85%; 
+  top: 85%;
   left: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
-  transition: top 0.5s ease;
+  transition: top 0.4s ease;
 }
 .work .box-container .box .content .tag{
   display: flex;
@@ -259,61 +264,65 @@ header .navbar ul li a:hover{
   align-items: center;
   height: 4.5rem;
   width: 100%;
-  padding: 0 1.5rem;
+  padding-left: 1rem;
   background: #ffd900;
 }
 .work .box-container .box .content .tag h3{
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .work .box-container .box:hover .content{
-  top: 25%;
+  top: 0;
 }
 .work .desc {
-  margin: 2rem 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: calc(100% - 4.5rem);
+  overflow-y: auto;
 }
 .work .desc p{
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
 }
 .work .desc .btns{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
 }
 .work .desc .btns .btn{
-  line-height: 1;
+  line-height: 1.2;
   display: inline-block;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-size: 1.5rem;
   color: #fff;
-  background: rgb(12, 12, 12);
-  margin-right: 1rem;
+  background: #4c00b4;
+  margin-right: 0;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .work .desc .btns .btn:hover{
   background: #310ae0f5;
   transform: translateY(-3px);
 }
 
-/* Responsive styles for projects section */
-@media screen and (max-width: 1024px) {
-  .work .box-container {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    padding: 0 1.5rem;
+/* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+  .work .box-container .grid-item {
+    width: 45%;
+    min-width: 280px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .work .button-group {
     width: 90%;
-    gap: 0.8rem;
   }
   
   .work .button-group .btn {
@@ -322,21 +331,31 @@ header .navbar ul li a:hover{
   }
   
   .work .box-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 0 1rem;
+    gap: 1rem;
+    width: 95%;
+  }
+  
+  .work .box-container .grid-item {
+    width: 45%;
+    min-width: 250px;
   }
   
   .work .box-container .box {
     height: 28rem;
   }
   
-  .work .box-container .box .content .tag h3 {
-    font-size: 1.6rem;
+  .work .box-container .box:hover .content {
+    top: 0;
+  }
+  
+  .work .desc {
+    padding: 0.8rem;
+    margin: 0.8rem;
   }
   
   .work .desc p {
     font-size: 1.4rem;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -353,17 +372,9 @@ header .navbar ul li a:hover{
     margin-bottom: 0.5rem;
   }
   
-  .work .box-container {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-  }
-  
-  .work .box-container .box {
-    height: 25rem;
-  }
-  
-  .work .box-container .box:hover .content {
-    top: 35%;
+  .work .box-container .grid-item {
+    width: 100%;
+    min-width: unset;
   }
   
   .work .desc .btns {
@@ -376,35 +387,35 @@ header .navbar ul li a:hover{
     width: 100%;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 450px) {
-  .work .heading {
-    font-size: 2.8rem;
-  }
   
   .work .box-container {
-    margin: 2rem auto;
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .work .box-container .box {
+    height: 30rem;
   }
   
   .work .box-container .box .content {
-    top: 80%;
+    top: 0;
+    position: relative;
+    height: auto;
   }
   
   .work .box-container .box .content .tag {
-    height: 4rem;
-  }
-  
-  .work .box-container .box .content .tag h3 {
-    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
   
   .work .desc {
-    margin: 1.5rem 1.2rem;
+    height: auto;
+    max-height: none;
   }
   
-  .work .desc p {
-    font-size: 1.3rem;
+  .work .desc .btns {
+    margin-top: 1rem;
   }
 }
 
@@ -454,7 +465,7 @@ header .navbar ul li a:hover{
     padding-right: 0;
   }
   section{
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 }
 
@@ -501,3 +512,43 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* Remove these custom isotope fixes as they're causing conflicts */
+/* Fix for isotope integration */
+.isotope .grid-item {
+  width: 100% !important;
+}
+
+/* Additional fixes for isotope */
+.work .box-container.isotope {
+  overflow: visible !important;
+}
+
+@media (max-width: 768px) {
+  .work .box-container.isotope {
+    overflow: visible !important;
+  }
+}
+
+/* Match the Talking Book screenshot style */
+.work .box-container .box.talking-book-style .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.work .box-container .box.talking-book-style .tag {
+  background: #ffde59;
+}
+
+.work .box-container .box.talking-book-style .desc {
+  background: #f8f9fa;
+  padding: 1.5rem;
+}
+
+.work .box-container .box.talking-book-style .desc .btns .btn {
+  background: #4c00b4;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
