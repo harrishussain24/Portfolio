@@ -42,11 +42,15 @@ function getProjects() {
 //project container
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
-    let projectsHTML = "";
+    let projectsHTML = '';
+    
     projects.forEach(project => {
+        // Add special class for Talking Book project
+        const specialClass = project.name === "Talking Book" ? "talking-book-style" : "";
+        
         projectsHTML += `
         <div class="grid-item ${project.category}">
-        <div class="box tilt">
+        <div class="box ${specialClass}">
       <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
@@ -86,8 +90,10 @@ function showProjects(projects) {
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
         fitRows: {
-            gutter: 20
-        }
+            gutter: 15,
+            equalheight: true
+        },
+        percentPosition: true
     });
 
     // filter items on button click
