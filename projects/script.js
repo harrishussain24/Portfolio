@@ -46,7 +46,7 @@ function showProjects(projects) {
     projects.forEach(project => {
         projectsHTML += `
         <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
+        <div class="box tilt">
       <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
@@ -85,8 +85,8 @@ function showProjects(projects) {
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
-        masonry: {
-            columnWidth: 200
+        fitRows: {
+            gutter: 20
         }
     });
 
@@ -96,6 +96,11 @@ function showProjects(projects) {
         $(this).addClass('is-checked');
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
+    });
+    
+    // Reinitialize isotope on window resize for responsiveness
+    $(window).resize(function() {
+        $grid.isotope('layout');
     });
 }
 
