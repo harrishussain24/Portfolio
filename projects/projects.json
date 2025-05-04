@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Medicine Investigation System",
+    "desc": "Built a Multi-Platform System using blockchain for secure data management and cross-platform tools for web and mobile access.",
+    "image": "thesis",
+    "category": "flutter",
+    "links": {
+      "code": "https://github.com/harrishussain24/"
+    }
+  },
+  {
+    "name": "Retail Sales Forecasting",
+    "desc": "Built ML/DL models (XGBoost, LSTM) to forecast Walmart sales, aiding inventory planning through EDA, tuning, and deployment-ready insights.",
+    "image": "demandForcastingProject",
+    "category": "python-AI",
+    "links": {
+      "code": "https://github.com/harrishussain24/Demand_Forecasting_for_Retail_Stores"
+    }
+  },
+  {
+    "name": "Chatbot",
+    "desc": "Flutter-based chatbot app with a Flask backend, utilizing the DeepSeek API for real-time AI-driven responses and running locally with Ollama.",
+    "image": "chatbotProject",
+    "category": "flutter",
+    "links": {
+      "code": "https://github.com/harrishussain24/ChatBot"
+    }
+  },
+  {
+    "name": "Smart Coin Counter",
+    "desc": "Automated coin sorting system with ESP32, sensors, and Firebase integration. Flutter app for real-time monitoring and management of coin counts",
+    "image": "coinCounterProject",
+    "category": "flutter",
+    "links": {
+      "code": "https://github.com/harrishussain24/"
+    }
+  },
+  {
+    "name": "Talking Book",
+    "desc": "Flutter app converting PDFs to audio using OCR, NLP, and Text-to-Speech for enhanced accessibility, with Firebase integration for user data management",
+    "image": "talkingBookProject",
+    "category": "flutter",
+    "links": {
+      "code": "https://github.com/harrishussain24/"
+    }
+  },
+  {
+    "name": "Hostel Management System",
+    "desc": "Developed a responsive Hostel Management System web app using .NET, ASP.NET, C#, HTML, CSS, Bootstrap, and MS SQL Server for efficient management and secure data handling.",
+    "image": "hostelProject",
+    "category": "web",
+    "links": {
+      "code": "https://github.com/harrishussain24/"
+    }
+  },
+  {
+    "name": "Ecommerce Sales Analysis",
+    "desc": "Analyzed sales data to uncover trends and insights on pricing and performance using Python, focusing on visualization and statistical analysis.",
+    "image": "ecommerceProject",
+    "category": "python-AI",
+    "links": {
+      "code": "https://github.com/harrishussain24/Ecommerce_Sales_Analysis"
+    }
+  },
+  {
+    "name": "Real CountDown",
+    "desc": "Flutter app with Firebase for selling properties, allowing to upload images, descriptions, receive bids, with integrated chat and Google Maps for location services.",
+    "image": "realCountDownProject",
+    "category": "flutter",
+    "links": {
+      "code": "https://github.com/harrishussain24/"
+    }
+  },
+  {
+    "name": "Idea Pro",
+    "desc": "An app allowing entrepreneurs to upload their ideas briefly, where investors can browse, contact, and negotiate via in-app chat, using Flutter and Firebase.",
+    "image": "ideaProProject",
+    "category": "flutter",
+    "links": {
+      "code": "https://github.com/harrishussain24/"
+    }
+  }
+]
