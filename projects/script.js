@@ -39,7 +39,7 @@ function getProjects() {
         });
 }
 
-
+//project container
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";

@@ -302,7 +302,7 @@ header .navbar ul li a:hover{
   transform: translateY(-3px);
 }
 
-/* Responsive styles for projects section */
+/* Responsive styles for all screen types for projects section */
 @media screen and (max-width: 1024px) {
   .work .box-container {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -386,30 +386,8 @@ header .navbar ul li a:hover{
   .work .box-container {
     margin: 2rem auto;
   }
-<<<<<<< HEAD
   .work .box-container .grid-item .box{
     width: 95% !important; 
-=======
-  
-  .work .box-container .box .content {
-    top: 80%;
-  }
-  
-  .work .box-container .box .content .tag {
-    height: 4rem;
-  }
-  
-  .work .box-container .box .content .tag h3 {
-    font-size: 1.5rem;
-  }
-  
-  .work .desc {
-    margin: 1.5rem 1.2rem;
-  }
-  
-  .work .desc p {
-    font-size: 1.3rem;
->>>>>>> 97635caeff3529e94294109df5bf55cde2db856f
   }
 }
 
