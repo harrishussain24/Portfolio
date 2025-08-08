@@ -1,5 +1,14 @@
 [
   {
+    "name": "AI-Powered-Resume-Analyzer",
+    "desc": "Smartly match your resume to job descriptions using AI and NLP! Upload your resume, let the backend parse and analyze it, and get instant feedback on your job fit.",
+    "image": "Resume_analyzer",
+    "category": "web",
+    "links": {
+      "code": "https://github.com/harrishussain24/AI-Powered-Resume-Analyzer"
+    }
+  },
+  {
     "name": "Medicine Investigation System",
     "desc": "Built a Multi-Platform System using blockchain for secure data management and cross-platform tools for web and mobile access.",
     "image": "thesis",

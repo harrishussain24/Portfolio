@@ -24,6 +24,10 @@
         "icon": "https://img.icons8.com/color/48/000000/firebase.png"
     },
     {
+        "name": "FastAPI",
+        "icon": "https://img.icons8.com/color/48/000000/flash-on.png"
+    },
+    {
         "name": "Android",
         "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
     },
@@ -46,6 +50,10 @@
     {
         "name": "CSS3",
         "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "Vue.js",
+        "icon": "https://img.icons8.com/color/48/000000/vue-js.png"
     },
     {
         "name": "JavaScript",
@@ -88,6 +96,10 @@
         "icon": "https://img.icons8.com/color/48/000000/database.png"
     },
     {
+        "name": "Docker",
+        "icon": "https://img.icons8.com/color/48/000000/docker.png"
+    },
+    {
         "name": "AWS",
         "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
     },
@@ -118,5 +130,17 @@
     {
         "name": "WordPress",
         "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    }    
+    },
+    {
+        "name": "spaCy",
+        "icon": "https://img.icons8.com/ios-filled/48/228BE6/brain.png"
+    },
+    {
+        "name": "NLP",
+        "icon": "https://img.icons8.com/color/48/language.png"
+    },
+    {
+        "name": "Supabase",
+        "icon": "https://img.icons8.com/color/48/000000/supabase.png"
+    }
 ]
