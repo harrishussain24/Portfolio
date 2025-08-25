@@ -79,14 +79,5 @@
     "links": {
       "code": "https://github.com/harrishussain24/"
     }
-  },
-  {
-    "name": "Idea Pro",
-    "desc": "An app allowing entrepreneurs to upload their ideas briefly, where investors can browse, contact, and negotiate via in-app chat, using Flutter and Firebase.",
-    "image": "ideaProProject",
-    "category": "flutter",
-    "links": {
-      "code": "https://github.com/harrishussain24/"
-    }
   }
 ]
